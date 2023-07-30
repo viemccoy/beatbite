@@ -2,3 +2,5 @@ python-dotenv
 newsapi-python
 openai
 requests
+pydub
+ffmpeg
