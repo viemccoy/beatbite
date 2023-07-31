@@ -31,3 +31,7 @@ Replace the api_key_here respective with each api key (include the single quotes
 OPENAI_API_KEY='api_key_here'
 NEWS_API_KEY='api_key_here'
 ELEVENLABS_API_KEY='api_key_here'
+
+Then simply run beatbite_CL.py and input your topic. The file (beatbite_final.wav) will be saved in the /beatbite_v1/ folder.
+
+Don't forget to stay curious, and tune back for your BeatBite Briefing with Diane the A.I.
