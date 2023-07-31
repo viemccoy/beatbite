@@ -17,7 +17,7 @@ Please reach out to me at v@violetcastles.com if you are having trouble accessin
 
 There are two ways to run BeatBite, as of Jul 31 2023.
 
-The first is the preferred method, which uses a local Flask app to allow for ease of use. If you run BeatBite in this way, the final BeatBite audio file will be sent to your browsers download folder.
+The first is the preferred method, which uses a local Flask app to allow for ease of use. If you run BeatBite in this way, the final BeatBite audio file (beatbite_final.wav) will be sent to your browsers download folder.
 
 To do this, simply clone the repo locally, and run app.py and navigate to http://127.0.0.1:5000
 
@@ -29,8 +29,11 @@ To do this, simply create a .env folder in the root directory (/beatbite/, not t
 Replace the api_key_here respective with each api key (include the single quotes in the file surrounding the API key).
 
 OPENAI_API_KEY='api_key_here'
+
 NEWS_API_KEY='api_key_here'
+
 ELEVENLABS_API_KEY='api_key_here'
+
 
 Then simply run beatbite_CL.py and input your topic. The file (beatbite_final.wav) will be saved in the /beatbite_v1/ folder.
 
