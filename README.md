@@ -7,8 +7,11 @@ BeatBite allows the user to generate a custom news report on any topic simply by
 Please note that BeatBite was made for the LabLabAI/ElevenLabs Hackathon, and as such requires an ElevenLabs API key to run. The code also requires several dependencies, and two other API's to function.
 
 You will need the ElevenLabsAPI key, which you can find information on here: https://elevenlabs.io/
+
 You will need a ChatGPT API key from OpenAI (with access to GPT-4): https://openai.com/blog/openai-api
+
 And you will need a NewsAPI key (free for projects in development, like this one): https://newsapi.org
+
 
 Please reach out to me at v@violetcastles.com if you are having trouble accessing anything. Put BeatBite URGENT as the subject for a faster response.
 
