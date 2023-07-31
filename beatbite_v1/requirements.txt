@@ -1,6 +1,7 @@
 python-dotenv
-newsapi-python
+newscatcherapi
 openai
 requests
 pydub
 ffmpeg
+flask

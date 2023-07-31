@@ -38,14 +38,14 @@ def main():
     add_intro_and_outro("beatbite_unfinished.mp3", "beatbite_intro.wav", "beatbite_outro.wav", "beatbite_final.wav")
 
 class BeatBite:
-    def __init__(self, news_api_key, openai_api_key, elevenlabs_api_key):
+    def __init__(self):
         # Load environment variables
         load_dotenv()
 
         # Get API keys
-        self.NEWS_API_KEY = news_api_key
-        self.OPENAI_API_KEY = openai_api_key
-        self.ELEVENLABS_API_KEY = elevenlabs_api_key
+        self.NEWS_API_KEY = os.getenv('NEWS_API_KEY')
+        self.OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+        self.ELEVENLABS_API_KEY = os.getenv('ELEVENLABS_API_KEY')
 
         # Initialize NewsAPI client
         self.newsapi = NewsApiClient(api_key=self.NEWS_API_KEY)
@@ -136,10 +136,11 @@ class BeatBite:
                 if chunk:
                     f.write(chunk)
 
-    def main(self, interest):
+    def main(self):
         """
         Main function to run the program.
         """
+        interest = self.get_user_interest()
         news_articles = self.get_news_articles(interest)
         news_broadcast = self.create_news_broadcast(news_articles)
         self.create_audio_file(news_broadcast)

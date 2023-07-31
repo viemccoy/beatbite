@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BeatBite</title>
+  <!-- Include Material Design CSS and JavaScript files -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<style>
+  /* Add custom styles here */
+  body {
+    background-color: #f5f5f5;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50 auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  input[type="text"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 16px;
+    color: #888;
+  }
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>BeatBite</h1>
+    <h2>Custom breaking news reports powered by AI</h2>
+      <form method="POST" action="/">
+        <div class="input-field">
+          <input type="text" id="interest" name="interest" class="validate">
+          <label for="interest">Enter your topic of interest:</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="news_api_key" name="news_api_key" class="validate">
+          <label for="news_api_key">Enter your NewsAPI key:</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="openai_api_key" name="openai_api_key" class="validate">
+          <label for="openai_api_key">Enter your OpenAI key:</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="elevenlabs_api_key" name="elevenlabs_api_key" class="validate">
+          <label for="elevenlabs_api_key">Enter your ElevenLabs key:</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+  </div>
+</body>
+</html>
