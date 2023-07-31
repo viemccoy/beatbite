@@ -5,6 +5,7 @@ Custom News Breaking News Briefings Powered by A.I.
 BeatBite allows the user to generate a custom news report on any topic simply by typing that topic in and pressing submit.
 
 Examples of BeatBite can be found on the notion paged linked below:
+
 https://violetcastles.notion.site/BeatBite-b791b138f70b485ba24c85768d89a0b6
 
 Please note that BeatBite was made for the LabLabAI/ElevenLabs Hackathon, and as such requires an ElevenLabs API key to run. The code also requires several dependencies, and two other API's to function.
