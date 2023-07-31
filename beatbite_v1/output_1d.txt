@@ -1,0 +1,6 @@
+Please enter a topic of interest (or 'done' to finish): global warming
+Please enter a topic of interest (or 'done' to finish): modern art
+Please enter a topic of interest (or 'done' to finish): astrology
+Please enter a topic of interest (or 'done' to finish): done
+
+Process finished with exit code 0
