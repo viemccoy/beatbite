@@ -21,7 +21,6 @@ filelock==3.12.2
 Flask==2.3.2
 frozenlist==1.4.0
 future==0.18.3
-gpt-engineer==0.0.7
 gunicorn==20.0.4
 identify==2.5.26
 idna==3.4
