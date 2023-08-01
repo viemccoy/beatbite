@@ -1,0 +1,7 @@
+python-dotenv
+newscatcherapi
+openai
+requests
+pydub
+ffmpeg
+flask
