@@ -7,8 +7,8 @@ from celery import Celery
 app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = 'beatbites/'
-app.config['CELERY_BROKER_URL'] = 'rediss://p87b80e66e2e3f12598e7daaceac6cb1ce7fd2a7a3aa49d5c860b4697242b6a2e@ec2-54-166-254-3.compute-1.amazonaws.com:23650/0'
-app.config['CELERY_RESULT_BACKEND'] = 'rediss://p87b80e66e2e3f12598e7daaceac6cb1ce7fd2a7a3aa49d5c860b4697242b6a2e@ec2-54-166-254-3.compute-1.amazonaws.com:23650/0'
+app.config['CELERY_BROKER_URL'] = 'rediss://:p87b80e66e2e3f12598e7daaceac6cb1ce7fd2a7a3aa49d5c860b4697242b6a2e@ec2-54-166-254-3.compute-1.amazonaws.com:23650?ssl_cert_reqs=CERT_REQUIRED'
+app.config['CELERY_RESULT_BACKEND'] = 'rediss://:p87b80e66e2e3f12598e7daaceac6cb1ce7fd2a7a3aa49d5c860b4697242b6a2e@ec2-54-166-254-3.compute-1.amazonaws.com:23650?ssl_cert_reqs=CERT_REQUIRED'
 celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
 celery.conf.update(app.config)
 
