@@ -12,9 +12,10 @@ def index():
         news_api_key = request.form.get('news_api_key')
         openai_api_key = request.form.get('openai_api_key')
         elevenlabs_api_key = request.form.get('elevenlabs_api_key')
-         # create BeatBite instance and process audio
+        # create a unique filename for each user
+        # create BeatBite instance and process audio
         beatbite_instance = BeatBite(news_api_key, openai_api_key, elevenlabs_api_key)
-        beatbite_instance.main(interest)  # assuming you modified the main method to accept an interest parameter
+        beatbite_instance.main(interest)
         # add intro and outro music
         add_intro_and_outro("beatbite_unfinished.mp3", "beatbite_intro.wav", "beatbite_outro.wav", "beatbite_final.wav")
         # send the newly created file to the user
@@ -24,4 +25,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(threaded=True, port=5000)
