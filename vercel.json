@@ -1,5 +1,14 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/beatbite_v1/templates/index" }
-  ]
-}
+ {
+     "builds": [
+         {
+             "src": "api/app.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "api/hello.py"
+         }
+     ]
+ }
