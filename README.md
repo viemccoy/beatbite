@@ -29,7 +29,7 @@ On this page, you will simply have to input your various API keys, and choose a 
 
 If you wish to run beatbite in the command line, you can do so with beatbite_CL.py which will require a .env file with the API keys.
 
-To do this, simply create a .env folder in the root directory (/beatbite/, not the /beatbite_v1 subfolder) and prepare the following.
+To do this, simply create a .env folder in the root directory (/beatbite) and prepare the following.
 Replace the api_key_here respective with each api key (include the single quotes in the file surrounding the API key).
 
 OPENAI_API_KEY='api_key_here'
